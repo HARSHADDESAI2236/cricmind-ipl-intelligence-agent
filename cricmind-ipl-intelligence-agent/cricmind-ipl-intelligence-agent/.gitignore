@@ -1,0 +1,38 @@
+# Java / Spring Boot
+backend/target/
+backend/.mvn/
+*.class
+*.jar
+!*/*.jar.example
+
+# Python
+ai-service/__pycache__/
+ai-service/**/__pycache__/
+ai-service/.venv/
+ai-service/venv/
+ai-service/*.egg-info/
+ai-service/.pytest_cache/
+ai-service/models/*.joblib
+!ai-service/models/.gitkeep
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env files (never commit secrets)
+.env
+**/.env
+!**/.env.example
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

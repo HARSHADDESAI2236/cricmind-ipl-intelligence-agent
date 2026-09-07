@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    color: #172033;
+    background: #f5f7fb;
+    font-family: 'DM Sans', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply min-h-screen bg-[#f5f7fb] text-[#172033];
+    margin: 0;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@layer components {
+  .surface {
+    @apply rounded-xl border border-[#e3e8f0] bg-white shadow-[0_8px_24px_rgba(23,32,51,0.04)];
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-bold uppercase tracking-[0.16em] text-[#52709d];
+  }
+}
+
 body {
-  @apply bg-slate-950 text-slate-100;
+  @apply bg-[#f5f7fb] text-[#172033];
 }
